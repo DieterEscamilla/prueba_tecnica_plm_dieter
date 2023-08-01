@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba técnica PLM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="form" id="form">
+    <p class="btn_return_profile"><b class="btn_triangle_return_profile"><</b> Perfil</p>
+    <div class="form_header">
+      <img class="form_img" src="img/iconUser.svg" alt="Imágen de usuario.">
+      <p class="form_label_required_fields">Los campos marcados con <b class="asterisk">*</b> son obligatorios.</p>
+    </div>
+    <div class="cont_fields">
+      <div class="input_group">
+        <label class="lbl_standard_input" for="name">Nombre: <b class="asterisk">*</b></label>
+        <input name="name" class="standard_input" id="name" type="text" required>
+      </div>
+      <div class="input_group">
+        <label class="lbl_standard_input" for="first_lastname">Apellido paterino: <b class="asterisk">*</b></label>
+        <input name="first_lastname" class="standard_input" id="first_lastname" type="text" required>
+      </div>
+      <div class="input_group">
+        <label class="lbl_standard_input" for="second_lastname">Apellido materno: <b class="asterisk">*</b></label>
+        <input name="second_lastname" class="standard_input" id="second_lastname" type="text" required>
+      </div>
+      <div class="input_group">
+        <label class="lbl_standard_input" for="email">Correo electrónico: <b class="asterisk">*</b></label>
+        <input  name="email" class="standard_input"  type="email" required>
+      </div>
+      <div class="select_group">
+        <label class="select_lbl" for="">Profesión:</label>
+        <select name="select_profession" class="select" name="" id="select_profession">
+        </select>
+      </div>
+      <div class="input_group display_none" id="select_group_cedula_profesional">
+        <label class="lbl_standard_input" for="second_lastname">Cédula profesional: <b class="asterisk">*</b></label>
+        <input name="professional_certificate" class="standard_input" id="professional_certificate" type="text" value="0" required>
+      </div>
+      <div class="select_group display_none" id="select_group_especialidad">
+        <label class="select_lbl" for="">Especialidad:</label>
+        <select name="speciality" class="select" id="select_especialidad" name="">
+        </select>
+      </div>
+      <div class="select_group" id="select_group_pais">
+        <label class="select_lbl" for="">País:</label>
+        <select name="select_country" class="select" id="select_pais" name="">
+        </select>
+      </div>
+      <div class="select_group" id="select_group_estado">
+        <label class="select_lbl" for="">Estado / Departamento / Provincia:</label>
+        <select name="select_state" class="select" id="select_estado" name="">
+        </select>
+      </div>
+      <div class="select_group" id="select_group_location">
+        <label class="select_lbl" for="">Delegación / Municipio:</label>
+        <select name="select_location" class="select" id="select_location" name="">
+        </select>
+      </div>
+    </div>
+    <div class="cont_btn_update_form">
+      <button class="btn_update_form" id="btn_update_form">ACTUALIZAR</button>
+    </div>
+  </form>  
+  <script src="script.js"></script>
+</body>
+</html>
